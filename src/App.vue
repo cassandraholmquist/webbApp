@@ -10,17 +10,13 @@
 </template>
 
 <style>
-body {
-  background-color: aquamarine;
-}
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: yellowgreen;
-  background-color: antiquewhite;
+  color: #1f0e38;
+  background-color: seashell;
 }
 
 #nav {
@@ -29,7 +25,7 @@ body {
 
 #nav a {
   font-weight: bold;
-  color: seashell;
+  color: #544122;
 }
 
 #nav a.router-link-exact-active {

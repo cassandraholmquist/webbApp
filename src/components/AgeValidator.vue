@@ -1,8 +1,8 @@
 <template>
   <div class="ageValidator">
     <input type="text" placeholder="enter your age" v-model="age" />
-    <!-- <input type="button" value="See menu" @click="checkAge" /> -->
-    <b-button variant="primary" pill @click="checkAge">See menu</b-button>
+
+    <b-button variant="secondary" pill @click="checkAge">See menu</b-button>
   </div>
 </template>
 

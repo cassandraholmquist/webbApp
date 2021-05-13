@@ -1,17 +1,22 @@
 <template>
   <div class="home">
     <Welcome place="Le Plaza" />
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img alt="App logo" src="../assets/icon@192px.png" />
+    <!-- funkar ej med v-bind -->
+    <!-- <img alt="App logo" :src="logo" />  -->
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 import Welcome from "@/components/Welcome.vue";
 
 export default {
   name: "Home",
+  data() {
+    return {
+      logo: "../assets/icon@192px.png",
+    };
+  },
   components: {
     Welcome,
   },
@@ -20,5 +25,7 @@ export default {
 
 
 <style scoped>
+img {
+  padding: 40px;
+}
 </style>
-

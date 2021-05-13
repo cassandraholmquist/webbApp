@@ -3,12 +3,12 @@
     <h1>.. but first..</h1>
     <AgeValidator @age-validated="onAgeValidated" />
     <ul v-if="isMajor">
-      <li v-for="drink in drinks" :key="drink.idDrink">
+      <li v-for="drink in drinks" :key="drink[0].idDrink">
         {{ drink[0].strDrink }}
       </li>
     </ul>
     <ul v-else>
-      <li v-for="mocktail in mocktails" :key="mocktail.idDrink">
+      <li v-for="mocktail in mocktails" :key="mocktail[0].idDrink">
         {{ mocktail[0].strDrink }}
       </li>
     </ul>
@@ -62,4 +62,7 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  padding: 20px;
+}
 </style>
