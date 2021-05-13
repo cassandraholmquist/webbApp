@@ -1,0 +1,20 @@
+// kan skapa en scss fil som håller variablerna som andra scss filer importerar _namnPåFil.scss 
+
+// $variabel-namn: hotpink;
+// h1 {
+  // color: $variabel-namn
+// }
+
+
+
+$body-bg: rgba(0, 0, 0, 0.9);
+
+$body-color: seashell;
+
+$theme-colors: (
+  'primary': #b4654a,
+  'secondary': #157a6e
+);
+
+@import '~bootstrap';
+@import '~bootstrap-vue';
