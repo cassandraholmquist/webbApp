@@ -16,11 +16,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #1f0e38;
-  background-color: seashell;
 }
 
 #nav {
   padding: 30px;
+  text-align: center;
 }
 
 #nav a {
