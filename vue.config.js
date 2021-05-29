@@ -3,7 +3,7 @@ module.exports = {
     manifestOptions: {
       background_color: 'seashell'
     },
-    name: 'Le Plaza',
+    name: 'La Plaza',
     themeColor: '#677821',
     workboxOptions: {
       runtimeCaching: [

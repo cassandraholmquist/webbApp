@@ -1,4 +1,4 @@
-// kan skapa en scss fil som håller variablerna som andra scss filer importerar _namnPåFil.scss 
+// kan skapa en scss fil som håller variablerna som andra scss filer importerar med  _namnPåFil.scss 
 
 // $variabel-namn: hotpink;
 // h1 {
@@ -6,15 +6,14 @@
 // }
 
 
-
 $body-bg: #26242A;
 
 $body-color: seashell;
 
 $theme-colors: (
-  'text': #EBD8CC,
   'primary': #1F0E38,
-  'secondary': #957c75
+  'secondary': #957c75,
+  'success': #624b26,
 );
 
 @import '~bootstrap';

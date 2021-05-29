@@ -2,16 +2,22 @@
   <div>
     <h1>.. but first..</h1>
     <AgeValidator @age-validated="onAgeValidated" />
-    <ul v-if="isMajor">
-      <li v-for="drink in drinks" :key="drink.idDrink">
-        {{ drink.strDrink }}
-      </li>
-    </ul>
-    <ul v-else>
-      <li v-for="mocktail in mocktails" :key="mocktail.idDrink">
-        {{ mocktail.strDrink }}
-      </li>
-    </ul>
+
+    <div :style="{ color: isMajor ? 'pink' : 'yellow' }">
+      <ul v-if="isMajor">
+        <h2>Alcoholic drinks</h2>
+        <li v-for="drink in drinks" :key="drink.idDrink">
+          {{ drink.strDrink }}
+        </li>
+      </ul>
+      <ul v-else-if="!isMajor">
+        <div v-if="isMajor !== null">
+          <h2>Non alcoholic drinks</h2></div>
+        <li v-for="mocktail in mocktails" :key="mocktail.idDrink">
+          {{ mocktail.strDrink }}
+        </li>
+      </ul>
+    </div>  
   </div>
 </template>
 
